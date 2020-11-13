@@ -1,5 +1,4 @@
 import XCTest
-import FPStarrySDK
 
 class Tests: XCTestCase {
     
