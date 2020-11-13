@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		092F149ACB308713D2108623 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1911F92FBDCF0575D87A9816 /* FPStarrySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FPStarrySDK.podspec; path = ../FPStarrySDK.podspec; sourceTree = "<group>"; };
+		092F149ACB308713D2108623 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1911F92FBDCF0575D87A9816 /* FPStarrySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FPStarrySDK.podspec; path = ../FPStarrySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2F5A37EA793157AA77760F31 /* Pods-FPStarrySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPStarrySDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FPStarrySDK_Tests/Pods-FPStarrySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FPStarrySDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPStarrySDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		9DFC313910A575DE169CD2BB /* Pods-FPStarrySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPStarrySDK_Example.release.xcconfig"; path = "Target Support Files/Pods-FPStarrySDK_Example/Pods-FPStarrySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AB5857D5DCD36638D57D7B6D /* Pods_FPStarrySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FPStarrySDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC530E98134778346D8F6E84 /* Pods-FPStarrySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPStarrySDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-FPStarrySDK_Example/Pods-FPStarrySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FCB054A03D5E23D9DFBD583B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FCB054A03D5E23D9DFBD583B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				2F5A37EA793157AA77760F31 /* Pods-FPStarrySDK_Tests.debug.xcconfig */,
 				7CFA5E39D3B7274A13F3E714 /* Pods-FPStarrySDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,10 +270,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FPStarrySDK_Example/Pods-FPStarrySDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/FPStarrySDK/FPStarrySDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FPStarrySDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
